@@ -1,0 +1,11 @@
+@use "variables" as v;
+
+@mixin enlaces{
+    text-decoration: none;
+    color: v.$muted;
+}
+
+@mixin headerStyle{
+    color: v.$primaryDark;
+}
+
