@@ -1,5 +1,19 @@
 @use "../base/variables" as v;
 @use "../base/components" as com;
 @use "../base/normalize";
-@use "../base/normalize" as m;
+@use "../base/responsive" as m;
+body{
+   background-color: v.$background;
+   font-family: v.$fuente_principal;
 
+    header{
+        @include com.headerStyle;
+        @include m.headernav;
+        @include m.headerphone;
+        a{
+            @include com.enlaces;
+        }
+        
+        
+    }
+}
