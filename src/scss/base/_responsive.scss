@@ -14,6 +14,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        padding: 15px;
         @content;
         div{
             svg{
@@ -21,6 +22,51 @@
                 opacity: 0;
             }
         }
+        nav{
+            width: 40%;
+            display: flex;
+            justify-content: space-between;
+            a{
+                transition: v.$comonTransition;
+                &:hover{
+                    transform: scale(1.1);
+                    color: v.$primaryDark;
+                    text-decoration: underline;
+                    transition:  v.$comonTransition;
+                }
+            }
+        }
+        nav:nth-child(3){
+            display: flex;
+            justify-content: space-evenly;
+            a{
+                
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 40px;
+                width: 137px;
+                color: v.$primaryDark;
+                transition: all 0.3s ease-in-out;
+                &:hover{
+                    transform: scale(1.1);
+                    transition: all 0.3s ease-in-out;
+                }
+            }
+            a:nth-child(2){
+               
+                background-color: v.$secondaryDark;
+                color: #ffffff;
+                border-radius: 10px;
+                transition: all 0.3s ease-in-out;
+                &:hover{
+                    background-color: v.$primaryLight;
+                    transform: scale(1.1);
+                    transition: all 0.3s ease-in-out;
+                }
+            }
+        }
+
     }
 }
 
@@ -64,6 +110,7 @@
                     height: 100%;
                     display: flex;
                     align-items: center;
+                    transition: all 0.3s ease-in-out;
                 }
                 transition: all 0.3s ease-in-out;
             }

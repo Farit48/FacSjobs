@@ -319,10 +319,53 @@ body header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 15px;
   }
   body header div svg {
     display: none;
     opacity: 0;
+  }
+  body header nav {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+  }
+  body header nav a {
+    transition: all 0.3s ease-in-out;
+  }
+  body header nav a:hover {
+    transform: scale(1.1);
+    color: #002584;
+    text-decoration: underline;
+    transition: all 0.3s ease-in-out;
+  }
+  body header nav:nth-child(3) {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  body header nav:nth-child(3) a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 137px;
+    color: #002584;
+    transition: all 0.3s ease-in-out;
+  }
+  body header nav:nth-child(3) a:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+  }
+  body header nav:nth-child(3) a:nth-child(2) {
+    background-color: #006B5F;
+    color: #ffffff;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+  }
+  body header nav:nth-child(3) a:nth-child(2):hover {
+    background-color: #6D89FA;
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
   }
 }
 @media (max-width: 480px) {
@@ -367,6 +410,7 @@ body header {
     height: 100%;
     display: flex;
     align-items: center;
+    transition: all 0.3s ease-in-out;
   }
   body header nav.is-open {
     transition: all 0.3s ease-in-out;
