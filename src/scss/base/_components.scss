@@ -9,3 +9,14 @@
     color: v.$primaryDark;
 }
 
+@mixin buttonStyle{
+    background-color: v.$secondaryDark;
+    border: none;
+    border-radius: 10px;
+    transition: v.$comonTransition;
+    &:active { 
+        background-color: v.$primaryLight;
+        transform: scale(0.90);
+        transition: v.$comonTransition;
+    }
+}
